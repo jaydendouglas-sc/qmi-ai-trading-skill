@@ -1,0 +1,77 @@
+FINAL VALIDATION — QMI v1.0.1
+
+Tests passed: True
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/generated/interface/models.py", line 30820, in hydrate_crdt_from_proto
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+test_below_sma200_removes_alts_and_caps_exposure (test_engine.QMITestCase.test_below_sma200_removes_alts_and_caps_exposure) ... ok
+test_daily_loss_circuit_breaker (test_engine.QMITestCase.test_daily_loss_circuit_breaker) ... ok
+test_missing_field_fails_closed (test_engine.QMITestCase.test_missing_field_fails_closed) ... ok
+test_sample_is_valid_and_allocates_100 (test_engine.QMITestCase.test_sample_is_valid_and_allocates_100) ... ok
+test_stale_data_forces_high_risk (test_engine.QMITestCase.test_stale_data_forces_high_risk) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+
+Sample CLI passed: True
+{
+  "skill": "qmi-market-regime",
+  "version": "1.0.0",
+  "evaluated_at": "2026-08-05T09:30:00+00:00",
+  "data_timestamp": "2026-08-05T09:00:00+00:00",
+  "data_quality": "Valid",
+  "factor_scores": {
+    "trend": 100.0,
+    "momentum": 100.0,
+    "volume": 85.0,
+    "rotation": 100.0,
+    "sentiment": 100.0,
+    "volatility_quality": 100.0
+  },
+  "confidence": 97.8,
+  "regime": "Strong Bull",
+  "risk_mode": "Normal",
+  "maximum_invested_exposure": 90,
+  "allocation": {
+    "BTC": 30,
+    "ETH": 35,
+    "SOL": 15,
+    "LINK": 10,
+    "CASH": 10
+  },
+  "action": "Rebalance gradually toward the target allocation after the permitted daily evaluation.",
+  "evidence": [
+    "Rotation score favors ETH relative strength.",
+    "Trend score: 100.0/100.",
+    "Momentum score: 100.0/100.",
+    "Weighted confidence: 97.8/100."
+  ],
+  "invalidation_conditions": [
+    "BTC closes below its 200-day moving average.",
+    "Daily portfolio loss reaches the circuit-breaker threshold.",
+    "Drawdown reaches the maximum configured threshold.",
+    "Input data becomes stale, incomplete or inconsistent.",
+    "A volatility shock or lower regime is confirmed."
+  ],
+  "warnings": [],
+  "risk_notice": "This output is a strategy demonstration and not investment advice."
+}
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/generated/interface/models.py", line 30820, in hydrate_crdt_from_proto
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.

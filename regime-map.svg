@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 220">
+<style>.t{font:20px Arial;text-anchor:middle;fill:#10101a}.s{stroke:#fff;stroke-width:2}</style>
+<rect class="s" x="20" y="70" width="130" height="80" rx="12" fill="#b71c1c"/><text class="t" x="85" y="115" fill="#fff">Bear</text>
+<rect class="s" x="150" y="70" width="130" height="80" rx="12" fill="#ef6c00"/><text class="t" x="215" y="115">Weak</text>
+<rect class="s" x="280" y="70" width="130" height="80" rx="12" fill="#f9a825"/><text class="t" x="345" y="115">Neutral</text>
+<rect class="s" x="410" y="70" width="130" height="80" rx="12" fill="#c0ca33"/><text class="t" x="475" y="115">Recovery</text>
+<rect class="s" x="540" y="70" width="130" height="80" rx="12" fill="#43a047"/><text class="t" x="605" y="115">Bull</text>
+<rect class="s" x="670" y="70" width="150" height="80" rx="12" fill="#00897b"/><text class="t" x="745" y="115" fill="#fff">Strong Bull</text>
+<rect class="s" x="840" y="70" width="140" height="80" rx="12" fill="#4a148c"/><text class="t" x="910" y="105" fill="#fff">High Risk</text><text class="t" x="910" y="132" fill="#fff">override</text>
+</svg>
