@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qmi-ai-trading-skill"
+version = "1.0.0"
+description = "Explainable crypto market-regime and risk-allocation Skill"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Jayden Douglas"}]
+dependencies = []
+
+[project.scripts]
+qmi-skill = "qmi_skill.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
