@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240">
-<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#311b92"/><stop offset="1" stop-color="#00b8d4"/></linearGradient></defs>
-<rect width="800" height="240" rx="36" fill="#0f1220"/>
-<path d="M90 170 L150 55 L210 170 Z" fill="none" stroke="url(#g)" stroke-width="18"/>
-<circle cx="150" cy="132" r="20" fill="#fff"/>
-<text x="260" y="125" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700" fill="#fff">QMI</text>
-<text x="263" y="168" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#b7c3ff">Quantum Market Intelligence</text>
-</svg>
